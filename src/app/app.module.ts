@@ -9,6 +9,7 @@ import { NoteStartComponent } from './notes/note-start/note-start.component';
 import { NoteListComponent } from './notes/note-list/note-list.component';
 import { NoteDetailComponent } from './notes/note-detail/note-detail.component';
 import { NoteEditComponent } from './notes/note-edit/note-edit.component';
+import { NoteItemComponent } from './notes/note-list/note-item/note-item.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NoteEditComponent } from './notes/note-edit/note-edit.component';
     NoteStartComponent,
     NoteListComponent,
     NoteDetailComponent,
-    NoteEditComponent
+    NoteEditComponent,
+    NoteItemComponent
   ],
   imports: [
     BrowserModule,
