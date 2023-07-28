@@ -1,1 +1,10 @@
-<p>note-list works!</p>
+<div class="row" style="padding-top: 10px;">
+  <div class="col-xs-12">
+    <button class="btn btn-success" routerLink="new">New Note</button>
+  </div>
+</div>
+<div class="row" style="padding-top: 25px; padding-bottom: 25px;">
+  <div class="col-xs-12">
+    <app-note-item *ngFor="let note of notes" [noteItem]="note"></app-note-item>
+  </div>
+</div>
