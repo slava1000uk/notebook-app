@@ -18,7 +18,7 @@ export class NoteService {
     )
   ];
 
-  notesUpdated = new Subject();
+  notesUpdated = new Subject<boolean>();
 
   getNotes() {
     return [...this.notes];
@@ -39,7 +39,7 @@ export class NoteService {
   removeNote(id: number) {
     this.notes.splice(id - 1, 1);
 
-    this.notesUpdated.next();
+    this.notesUpdated.next(true);
   }
 
   addNote(note: Note) {
@@ -47,7 +47,7 @@ export class NoteService {
 
     if (allowedToAdd) {
       this.notes = [...this.notes, note];
-      this.notesUpdated.next();
+      this.notesUpdated.next(true);
     }
   }
 }
