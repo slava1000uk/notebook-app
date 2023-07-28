@@ -1,1 +1,23 @@
-<p>note-detail works!</p>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ note.title }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    {{ note.content }}
+  </div>
+</div>
+<div class="row" style="padding-top: 20px;">
+  <div class="col-xs-12">
+    <div class="btn-group" appDropedown>
+      <button type="button" class="btn btn-primary dropdown-toggle">
+        Edit <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a routerLink="edit" style="cursor:pointer;">Edit Note</a></li>
+        <li><a style="cursor:pointer;" (click)="onDeleteNote()">Delete Note</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
