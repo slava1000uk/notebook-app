@@ -1,1 +1,8 @@
-<p>note-item works!</p>
+<a [routerLink]="['/notes', noteId]" 
+   routerLinkActive="active" 
+   style="cursor: pointer;"
+   class="list-group-item clearfix">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ noteItem.title }}</h4>
+  </div>
+</a>
