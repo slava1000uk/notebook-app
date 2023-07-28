@@ -10,6 +10,7 @@ import { NoteListComponent } from './notes/note-list/note-list.component';
 import { NoteDetailComponent } from './notes/note-detail/note-detail.component';
 import { NoteEditComponent } from './notes/note-edit/note-edit.component';
 import { NoteItemComponent } from './notes/note-list/note-item/note-item.component';
+import { DropedownDirective } from './shared/dropedown.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NoteItemComponent } from './notes/note-list/note-item/note-item.compone
     NoteListComponent,
     NoteDetailComponent,
     NoteEditComponent,
-    NoteItemComponent
+    NoteItemComponent,
+    DropedownDirective
   ],
   imports: [
     BrowserModule,
