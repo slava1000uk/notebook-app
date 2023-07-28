@@ -11,6 +11,7 @@ import { NoteDetailComponent } from './notes/note-detail/note-detail.component';
 import { NoteEditComponent } from './notes/note-edit/note-edit.component';
 import { NoteItemComponent } from './notes/note-list/note-item/note-item.component';
 import { DropedownDirective } from './shared/dropedown.directive';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,8 @@ import { DropedownDirective } from './shared/dropedown.directive';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
